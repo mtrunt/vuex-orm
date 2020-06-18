@@ -12,6 +12,7 @@
   ],
   "scripts": {
     "build": "node scripts/build.js",
+    "prepare": "npm run build",
     "clean": "rm -rf dist && rm -rf dist && rm -rf coverage && rm -rf .nyc_output && rm -rf .tmp",
     "lint": "prettier --write --parser typescript \"{src,test}/**/*.ts\"",
     "lint:fail": "prettier --check --parser typescript \"{src,test}/**/*.ts\"",
