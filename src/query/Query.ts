@@ -994,7 +994,7 @@ export default class Query<T extends Model = Model> {
       )
     }
 
-    return this.hydrate({ ...instance, ...data })
+    return this.hydrate(Object.assign(instance, data))
   }
 
   /**
